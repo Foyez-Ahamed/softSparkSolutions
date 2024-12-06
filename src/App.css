@@ -1,0 +1,9 @@
+.myInfoStyle{
+    max-width: 70%;
+    margin: 0px auto;
+    border: 20x solid red;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
