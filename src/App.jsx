@@ -1,34 +1,61 @@
-import './App.css'
-import Todo from './Todo'
+import Actors from "./Actors";
+import "./App.css";
+import Family from "./Family";
+// import Todo from './Todo'
 
 function App() {
-
   // const image = 'https://i.ibb.co.com/mb4fw7b/small-6-Pg-OGc-Om-I2-Whats-App-Image-2023-06-07-at-5-32-36-PM.jpg';
   // const description = 'this is description';
 
+  const actors = [
+    "Foyez Ahamed",
+    "Nesar Ahamed",
+    "Salay Ahamed",
+    "Salman Saif",
+    "Abdullah Tahsin",
+  ];
+
+  const familyMembers = [
+    { id: 1, name: "Foyez Ahmaed", age: 26, wifeName: "Suraiya Zaman Konok" },
+    { id: 2, name: "Nesar Ahamed", age: 30, wifeName: "Tamanna Islam Honey" },
+    { id: 3, name: "Salay Ahamed", age: 33, wifeName: "Umme Kulsum Moni" },
+  ];
+
   return (
-   <>
+    <>
+      {/* mapping data from object */}
+      {familyMembers.map((member) => (
+        <Family key={member.id} member={member}></Family>
+      ))}
+      {/* mapping data from object */}
 
-   <h1 className='text-3xl font-bold underline text-center'>Hello world</h1>
+      {/* ............................. */}
 
-   {/* others file component import */}
-   <Todo task="Ami ghumabo 10:30" isCompleted={false} />
+      {/* mapping data from array */}
 
-   <Todo task="Ami react shikhbo" isCompleted={true} />
-   {/* others file component import */}
+      {actors.map((actor) => (
+        <Actors key={actor} actor={actor}></Actors>
+      ))}
 
+      {/* mapping data from array */}
 
+      {/* others file component import */}
 
-   {/* <img className='w-[100px] h-[100px] mt-5 mx-auto rounded-md' src={image} alt={description} /> */}
+      {/* <Todo task="Ami ghumabo 10:30" isCompleted={false} />
 
-   {/* <ChildComponet/>
+   <Todo task="Ami react shikhbo" isCompleted={true} /> */}
+
+      {/* others file component import */}
+
+      {/* <img className='w-[100px] h-[100px] mt-5 mx-auto rounded-md' src={image} alt={description} /> */}
+
+      {/* <ChildComponet/>
 
    <Device name="Mobile" price="20000" />
    <Device name="Laptop" price="50000"/>
    <Device name="Tablet" price="30000"/> */}
-
-   </>
-  )
+    </>
+  );
 }
 
 // function ChildComponet(){
@@ -48,7 +75,6 @@ function App() {
 //     maxWidth: '70%',
 //     margin: '20px auto'
 //   }
-  
 
 //   return(
 //     <div className='mt-5 text-center'>
@@ -71,7 +97,7 @@ function App() {
 
 //   // console.log(props);
 
-//   const {name, price} = props; // object destructuring // 
+//   const {name, price} = props; // object destructuring //
 
 //   return(
 //     <>
@@ -84,6 +110,4 @@ function App() {
 //   )
 // }
 
-export default App
-
-
+export default App;
