@@ -1,41 +1,51 @@
-import Actors from "./Actors";
+// import Actors from "./Actors";
 import "./App.css";
-import Family from "./Family";
+import Player from "./Player";
+// import Family from "./Family";
 // import Todo from './Todo'
 
 function App() {
   // const image = 'https://i.ibb.co.com/mb4fw7b/small-6-Pg-OGc-Om-I2-Whats-App-Image-2023-06-07-at-5-32-36-PM.jpg';
   // const description = 'this is description';
 
-  const actors = [
-    "Foyez Ahamed",
-    "Nesar Ahamed",
-    "Salay Ahamed",
-    "Salman Saif",
-    "Abdullah Tahsin",
-  ];
+  // const actors = [
+  //   "Foyez Ahamed",
+  //   "Nesar Ahamed",
+  //   "Salay Ahamed",
+  //   "Salman Saif",
+  //   "Abdullah Tahsin",
+  // ];
 
-  const familyMembers = [
-    { id: 1, name: "Foyez Ahmaed", age: 26, wifeName: "Suraiya Zaman Konok" },
-    { id: 2, name: "Nesar Ahamed", age: 30, wifeName: "Tamanna Islam Honey" },
-    { id: 3, name: "Salay Ahamed", age: 33, wifeName: "Umme Kulsum Moni" },
-  ];
+  // const familyMembers = [
+  //   { id: 1, name: "Foyez Ahmaed", age: 26, wifeName: "Suraiya Zaman Konok" },
+  //   { id: 2, name: "Nesar Ahamed", age: 30, wifeName: "Tamanna Islam Honey" },
+  //   { id: 3, name: "Salay Ahamed", age: 33, wifeName: "Umme Kulsum Moni" },
+  // ];
+
+  // function for event handler //
+  // const addWork = () =>{
+  //   alert('Ami konok re Love kori');
+  // }
+
+  // const calculation = (num) =>{
+  //   alert(num * 5);
+  // }
 
   return (
     <>
       {/* mapping data from object */}
-      {familyMembers.map((member) => (
+      {/* {familyMembers.map((member) => (
         <Family key={member.id} member={member}></Family>
-      ))}
+      ))} */}
       {/* mapping data from object */}
 
       {/* ............................. */}
 
       {/* mapping data from array */}
 
-      {actors.map((actor) => (
+      {/* {actors.map((actor) => (
         <Actors key={actor} actor={actor}></Actors>
-      ))}
+      ))} */}
 
       {/* mapping data from array */}
 
@@ -54,6 +64,27 @@ function App() {
    <Device name="Mobile" price="20000" />
    <Device name="Laptop" price="50000"/>
    <Device name="Tablet" price="30000"/> */}
+
+
+   {/* event handler */}
+
+   {/* <div className="mt-5 text-center border border-red-200 max-w-96 mx-auto p-8">
+     
+   <div className="flex justify-between">
+   <button onClick={addWork} className="bg-red-600 px-4 py-2 text-white rounded-md font-bold"> Add Work </button>
+
+<button onClick={() => calculation(5)} className="bg-red-600 px-4 py-2 text-white rounded-md font-bold"> Calculation </button>
+   </div>
+
+   </div> */}
+
+
+
+   {/* practice react useState hooks */}
+   <Player />
+   {/* practice react useState hooks */}
+   
+
     </>
   );
 }
