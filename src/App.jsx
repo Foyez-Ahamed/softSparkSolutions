@@ -1,6 +1,7 @@
 // import Actors from "./Actors";
 import "./App.css";
-import Player from "./Player";
+import Users from "./Users";
+// import Player from "./Player";
 // import Family from "./Family";
 // import Todo from './Todo'
 
@@ -81,8 +82,13 @@ function App() {
 
 
    {/* practice react useState hooks */}
-   <Player />
+   {/* <Player /> */}
    {/* practice react useState hooks */}
+
+
+   {/* practice useEffects hook */}
+   <Users />
+   {/* practice useEffects hook */}
    
 
     </>
